@@ -1,0 +1,26 @@
+{
+  "name": "ecapital-pagination",
+  "version": "0.11.1",
+  "description": "Magical automatic pagination for anything in AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashsahzeb/angularUtils.git"
+  },
+  "keywords": [
+    "angularjs",
+    "pagination",
+    "directive",
+    "paging",
+    "angular"
+  ],
+  "author": "Michael Bromley <michael@michaelbromley.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashahzeb/angularUtils/issues"
+  },
+  "homepage": "https://github.com/ashahzeb/angularUtils/tree/master/src/directives/pagination"
+}

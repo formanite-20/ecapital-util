@@ -1,0 +1,24 @@
+{
+  "name": "ecapital-pagination",
+  "description": "Magical automatic pagination for anything in AngularJS",
+  "main": "index.js",
+  "authors": [
+    "Michael Bromley <michael@michaelbromley.co.uk>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularjs",
+    "pagination",
+    "directive",
+    "paging",
+    "angular"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
