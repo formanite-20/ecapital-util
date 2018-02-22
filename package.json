@@ -1,5 +1,5 @@
 {
-  "name": "ecapital-pagination",
+  "name": "angularUtils-pagination",
   "version": "0.11.1",
   "description": "Magical automatic pagination for anything in AngularJS",
   "main": "index.js",
