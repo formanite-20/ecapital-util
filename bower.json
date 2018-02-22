@@ -1,11 +1,18 @@
 {
   "name": "ecapital-pagination",
-  "description": "Magical automatic pagination for anything in AngularJS",
-  "main": "index.js",
+  "version": "0.11.1",
+  "homepage": "https://github.com/michaelbromley/angularUtils/tree/master/src/directives/pagination",
   "authors": [
     "Michael Bromley <michael@michaelbromley.co.uk>"
   ],
-  "license": "MIT",
+  "description": "Magical automatic pagination for anything in AngularJS",
+  "main": ["dirPagination.js", "dirPagination.tpl.html"],
+  "moduleType": [
+    "globals"
+  ],
+  "dependencies": {
+    "angular": ">=1.1.4"
+  },
   "keywords": [
     "angularjs",
     "pagination",
@@ -13,7 +20,7 @@
     "paging",
     "angular"
   ],
-  "homepage": "",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -22,3 +29,4 @@
     "tests"
   ]
 }
+
