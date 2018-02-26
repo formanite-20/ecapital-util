@@ -236,7 +236,8 @@
                 onPageChange: '&?',
                 paginationId: '=?',
                 autoHide: '=?',
-                onExportCSV: '&?'
+                onExportCSV: '&?',
+                onPageSizeChange: '&?'
             },
             link: dirPaginationControlsLinkFn
         };
@@ -279,6 +280,14 @@
             scope.boundaryLinks = angular.isDefined(attrs.boundaryLinks) ? scope.$parent.$eval(attrs.boundaryLinks) : false;
 
             var paginationRange = Math.max(scope.maxSize, 5);
+            scope.pageSize = paginationService.getItemsPerPage(paginationId) || 20;
+            scope.pageSizeOptions = [{text:'5',val:5},{text:'10',val:10},{text:'20',val:20}]
+
+            if(scope.pageSize){
+              if (!scope.pageSizeOptions.some(e => e.val === scope.pageSize)) {
+                scope.pageSizeOptions.push({text:scope.pageSize.toString(),val:scope.pageSize})
+              }
+            }
             scope.pages = [];
             scope.pagination = {
                 last: 1,
@@ -338,6 +347,12 @@
                 if(scope.onExportCSV){
                     scope.onExportCSV();
                 }
+            }
+
+            scope.changePageSize = function(val){
+              if(scope.onPageSizeChange){
+                scope.onPageSizeChange({itemCount:val.pageSize});
+              }
             }
 
             /**
