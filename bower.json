@@ -6,7 +6,7 @@
     "Michael Bromley <michael@michaelbromley.co.uk>"
   ],
   "description": "Magical automatic pagination for anything in AngularJS",
-  "main": ["dirPagination.js", "dirPagination.tpl.html"],
+  "main": "index.js",
   "moduleType": [
     "globals"
   ],
